@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 98%;
+        }
+
+        body {
+            background-color: rgb(253, 236, 244) !important;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        footer {
+            padding-top: 70px;
+            background-color: #1bb64e;
+            height: 810px;
+            background-size: cover;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .footr {
+            text-align: center;
+            width: 100%;
+        }
+        .title {
+            margin-bottom: 0;
+            font-size: 8em;
+        }
+
+        .sentence {
+            margin-top: 63px;
+            padding-top: 50px;
+            font-family: "marseille", sans-serif;
+            color: white;
+        }
+
+        .contact {
+            width: 110px;
+            height: 110px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        .contact:hover {
+            transition: all 0.3s ease;
+            filter: brightness(5) drop-shadow(0 0 30px rgba(255, 255, 255, 1));
+        }
+
+        .elfakin {
+            color: white;
+            margin-top: 90px;
+            font-weight: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .foto1 {
+                height: 100%;
+                width: 102%;
+            }
+            .title {
+                margin-bottom: 0;
+                font-size: 2em;
+            }
+            .elfakin {
+                color: white;
+                margin-top: 12em;
+                font-weight: 10px;
+            }
+            .contact {
+                width: 110px;
+                height: 110px;
+                margin-top: 3em;
+                cursor: pointer;
+            }
+            .logoelf {
+                width: 100px;
+                margin-left: 20em;
+                margin-top: 2em;
+            }
+            footer {
+                height: 720px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .foto1 {
+                height: 200%;
+                width: 205%;
+            }
+            .logoelf {
+                width: 100px;
+                height: 100px;
+                margin-top: 5em;
+                margin-left: 22em;
+            }
+            .title {
+                margin-bottom: 0;
+                font-size: 3em;
+                padding: 0;
+            }
+            .contact {
+                width: 110px;
+                height: 110px;
+                margin-top: 6em;
+                cursor: pointer;
+                margin-left: 4em;
+            }
+            .elfakin {
+                margin-top: 7em;
+                margin-left: 4em;
+            }
+            footer {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="img/logofolio/Untitled-4-02.png" class="foto1" alt="">
+        </div>
+        <div>
+            <img src="img/logofolio/Untitled-4-01.png" class="foto1" alt="">
+        </div>
+        <div>
+            <img src="img/logofolio/Untitled-4-03.png" class="foto1" alt="">
+        </div>
+        <div>
+            <img src="img/logofolio/Untitled-4-04.png" class="foto1" alt="">
+        </div>
+        <div>
+            <img src="img/logofolio/Untitled-4-05.png" class="foto1" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="footr container mt-5">
+            <a href="index.html" target="_blank">
+                <div class="logoelf d-flex justify-content-center" id="hvr-bounce-in">
+                    <img id="logoelf" src="img/logoelf-02.png" style="width: 100px; height: 100px;" alt="Anasayfa">
+                </div>
+            </a>
+            <div class="sentence fs-2 d-flex justify-content-center">
+                <h1 class="title">Living, learning, & leveling up <br> one day at a time.</h1>
+            </div>
+            <section id="contact">
+                <div class="container d-flex justify-content-center" id="contactLogo">
+                    <a href="mailto:elifakin11@gmail.com">
+                        <img class="contact" src="img/contact-03.png" alt="Contact">
+                    </a>
+                </div>
+            </section>
+            <div class="container d-flex justify-content-center">
+                <p class="elfakin fw-2" style="letter-spacing: 6px; text-decoration-line: none;">&copy; 2024 Elif Akin</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

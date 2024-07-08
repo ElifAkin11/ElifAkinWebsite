@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elif Akın Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vlg7oir.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ykx0qxc.css">
+    <link rel="stylesheet" href="https://use.typekit.net/own8cwa.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <style>
+        .navbar-toggler {
+    color: #f87e8d; !important
+    
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    color: #f87e8d; !important
+}
+        .nav-link.active {
+    color: rgb(248, 126, 141) !important;
+    font-family: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px;
+    margin-inline: 10px;
+}
+
+.nav-link {
+    color: #f87e8d !important;
+    font-family: "marseille", sans-serif !important;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px;
+    margin-inline: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    transition: all 0.10s ease-in-out;
+    filter: brightness(5) drop-shadow(0 0 30px rgb(237, 173, 173));
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav-background {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Saydam arka plan */
+    border-radius: 25px; /* Kenar yumuşatma */
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 10px;
+        font-size: 16px;
+        margin-inline: 5px;
+    }
+
+    .nav-background {
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.9); /* Saydam arka plan */
+        border-radius: 15px; /* Kenar yumuşatma */
+        width: auto;
+        height: auto;
+    }
+
+    .navbar-collapse {
+        justify-content: start;
+    }
+}
+
+
+            body {
+            background: linear-gradient(90deg, rgba(255,247,173,0.5019257703081232) 0%, rgba(255,169,249,0.7456232492997199) 50%, rgba(255,247,173,0.5047268907563025) 100%) !important;
+            font-family: "hey-eloise-watercolor", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+             }
+
+            #fotome {
+            border-radius: 200px 200px 0px 0px; !important
+            margin-top: 0;
+            }
+
+        #logo1 {
+
+            width: 62px;
+            border-radius: 4000px 4000px 4000px 4000px;
+            display: inline-block;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+        #logo2 {
+            width: 60px;
+            border-radius: 4000px 4000px 4000px 4000px;
+            display: inline-block;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+      
+        .social {
+        display: flex;
+        gap: 30px; /* İki link arasında boşluk bırakmak için, bu değeri ayarlayabilirsiniz */
+        justify-content: start;
+        align-items: center; 
+        
+        }
+       
+    .social {
+        margin: 0; /* Varsayılan marjinleri sıfırlamak için */
+        padding: 0; /* Varsayılan paddingleri sıfırlamak için */
+    }
+
+    .intro {
+        font-size: 150px; !important
+        letter-spacing: 10px;
+        margin-top 0px;
+        padding:0px;
+        line-height:0.8;
+        color : rgb(210, 0, 98)
+        
+        }
+
+        #intro2 {
+            color: rgb(248, 126, 141);
+            font-size: 30px;
+            font-family: "marseille", sans-serif; !important;
+            margin-top: 50px;
+        }
+
+        p {
+            font-family: font-family: "marseille", sans-serif; !important
+            font-weight: 400;
+            font-style: normal;
+            margin-top: 10px;
+            margin right: 5px;
+            font-size: 25px;
+            line-height: 30px;
+            padding: 1px;
+            }
+
+           #remotely {
+            font-family: "hey-eloise-watercolor", sans-serif;
+            font-size: 60px;
+            color:rgb(48, 203, 136)
+           }
+
+           #introduction1{
+
+            font-family: "marseille", sans-serif; !important;
+            line-height: 31px;
+            color: rgb(180, 42, 58)
+            }
+
+            .wrap{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                padding-inline-end: 10;
+            }
+
+            #skills {
+            position: relative; 
+            }
+
+.skill {
+    position: absolute; /* Mutlak konumlandırma */
+    top: 50%; /* Görseli dikeyde ortalar */
+    left: 2%; /* Görseli yatayda sola kaydırır */
+    transform: translateY(-50%); /* Görselin dikeyde tam ortalanmasını sağlar */
+    margin-left: 230px;
+    width: 950px;
+    }
+
+#works{
+    font-size: 30px;
+    font-family: "marseille", sans-serif;
+    margin-top: 230px;
+    }
+
+    
+
+    .custom-card {
+    text-decoration: none; /* Bağlantı alt çizgilerini kaldırma */
+    color: inherit; /* Bağlantı rengini kalıt alma */
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s; /* Geçiş efektleri */
+}
+
+.custom-card:hover .card {
+    transform: scale(1.05) rotate(-3deg); /* Hover durumunda kartın büyümesi ve döndürülmesi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover durumunda gölge efekti */
+}
+
+.custom-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.custom-card-body {
+    padding: 15px;
+}
+
+.card-body h5 {
+    margin: 0;
+    text-decoration: none; /* Alt çizgiyi kaldırma */
+    color: #f87e8d;
+    font-size: 25px;
+}
+
+
+.seeMore{
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.seeMore a {
+    color:rgb(71, 71, 70);
+    font-size: 30px;
+    font-family: "marseille", sans-serif;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    }
+
+    a:hover {
+        color:#f87e8d;
+        transition: transform 0.3s;
+    }
+
+    .seeMore img {
+        animation: rotate 7s linear infinite;
+    }
+    
+    @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        footer{
+            padding-top: 70px;
+            background-color: #1bb64e;
+            height: 770px;
+            background-size: cover;
+            }
+
+            .programmingPng1 {
+                margin-left: -50em;
+            }
+
+           
+            .sentence{
+                
+    font-family: "marseille", sans-serif;
+    color: white;
+    
+            }
+
+            .title {
+                
+                margin-bottom: 0;
+            }
+
+            .sentence{
+                margin-top: 63px;
+                padding-top: 50px;
+            }
+
+            .contact {
+                width: 110px;
+                height: 110px;
+                margin-top: 50px;
+                margin-left: 20px;
+                cursor: pointer;
+            }
+
+            .contact:hover{
+                
+        transition: all 0.3s ease;
+        filter: brightness(5) drop-shadow(0 0 30px rgba(255, 255, 255, 1));
+
+            }
+
+            .elfakin{
+                color: white;
+                margin-top: 90px;
+                font-weight: 10px;
+
+            }
+            
+            @media (min-width: 1200px) {
+                #remotely {
+    
+    font-size: 50px;
+                }
+                #introduction1 {
+    
+    padding-top: 23px; 
+                }
+                .offset-1 {
+                    margin-left: 4em;
+}
+
+.social{
+    margin-top: -2.5em;
+}
+.img-fluid {
+    max-width: 105%;
+    height: auto; }
+    
+
+
+                #mobil {
+                display: none;
+            }
+
+            #mobil12{
+                display: none;
+            }
+            .mobilTitle {
+                display: none;
+            }
+            #ProgrammingPng1 {
+               
+            margin-top: ;
+    position: relative;
+    z-index: 1;
+    margin-left: -5em;
+    
+    
+    
+            }
+
+            #programmingPng {
+                margin-top: -2em;
+                height: 60vh;
+                margin-left: -2em; 
+                
+            }
+            #desktopFoto {
+        margin-top: 60px;
+    }
+    .background {
+        height: 970px;
+    }
+
+    #works{
+        margin-top:70px;
+    }
+
+            
+  .
+            }
+           
+
+            
+
+            
+        @media (max-width: 768px) {
+    p {
+        line-height: 40px;
+        font-size: 20px;
+        padding: 10px;
+        padding-bottom: 0;
+        margin-bottom: -10px;
+    }
+
+    #introduction1 {
+        margin-top: 0;
+        line-height: 35px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .social {
+        gap: 45px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .skill {
+        
+        position: absolute;
+        top: 35%;
+        left: 0;
+        transform: translateY(-50%);
+        margin-left: 7em;
+        margin-top: 0%;
+        width: 550px;
+    }
+
+    .offset-1 {
+        margin-left: 0;
+    }
+
+    .wrap {
+        top: 80px;
+        height: 1000px;
+    }
+
+    #mobil {
+        color: white;
+        font-size: 41px;
+        letter-spacing: 2px;
+        line-height: 40px;
+        margin-bottom: 0px;
+        margin-left: -1.2em;
+        padding: 0;
+        z-index: 2;
+        position: relative;
+        margin-top: 3em;
+    }
+
+    #mobil2 {
+        color: white;
+        font-size: 43px;
+        letter-spacing: 2px;
+        line-height: 40px;
+        margin-top: 3.2em;
+        z-index: 2;
+        position: relative;
+        top: 0.3em;
+        margin-left: 0.2em;
+    }
+
+    .mobilTitle2 {
+        margin-top: -15em;
+    }
+
+    #ProgrammingPng1 {
+        
+        z-index: 2;
+        position: relative;
+        margin-left: -6.5em;
+    }
+
+    #ProgrammingPng {
+        
+        margin-top: 0;
+        padding-top: 0px;
+        z-index: 2;
+        position: relative;
+        margin-left: -6.5em;
+    }
+
+    #desktopFoto {
+        margin-top: -15em;
+    }
+
+    .display-3 {
+        display: none;
+    }
+
+    #works {
+        margin-top: 50px;
+    }
+
+    .seeMore {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .img-fluid {
+        max-width: 96%;
+        height: auto;
+        margin-left: 0.8em;
+    }
+
+    .intro {
+        font-size: 100px;
+    }
+
+    #intro2 {
+        color: rgb(248, 126, 141);
+        font-size: 27px;
+        font-family: "marseille", sans-serif;
+        margin-top: 50px;
+    }
+
+    #remotely {
+        font-size: 41.3px;
+        margin-bottom: 3px;
+    }
+
+    .background {
+        height: 1470px;
+    }
+}
+
+
+
+    </style>
+
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light custom-navbar fixed-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav-background">
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
+              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#works">Work</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div> 
+        </div>
+      </nav>
+      
+     <section class="container py-5" id="about">
+         <div class="text-center py-5">
+            <h2 class="intro fw-bolder">Hi. I'm Elif.</h2>
+            <h2 class="intro">Designer & Frontend Developer.</h2>
+            <p class="py-2" id="intro2"> I design and code beautifully simple things, and I love what I do.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="img-fluid" src="img/fotom.jpg" id="fotome">
+                </div>
+        
+            <div class="col-lg-7 offset-1" id="remotely1">
+
+                <p class="" id="remotely">I'm remotely working from <span id="temperature"></span><span id="city"></span></p>
+                
+
+                   <p class=" ms-0 my-1 me-5" id="introduction1"> Over the past 6+ years, I've worked in various areas of digital design, including social media, and I worked in the news department of television channels. </p>
+                   
+                    
+                    <p class="ms-0 me-1 mb-0" id="introduction1">I’ve always been someone who has both a creative and a logical side. When I discovered web design in college, I realized it would be the perfect fit.
+                    </p>
+                        
+                    <p class="ms-0 me-1 my-0" id="introduction1">I could use my creative side to design and my logical side to code. As a bonus, being both designer and developer allows me to make sure no detail is lost in translation.
+                    </p>
+                    </p>
+                    <div class="social py-5">
+                    <a href="https://www.linkedin.com/in/elif-ak%C4%B1n-14147b282/" target="_blank">
+                        <div class="linkedin" id="hvr-bounce-in">
+                            <img id="logo1" src="img/linkeddln.png" alt="Linkedin">
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/elfanya.design/" target="_blank">
+                        <div class="instagram" id="hvr-bounce-in">
+                            <img id="logo2" src="img/instalogo.png" alt="Instagram">
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/ElifAkin11" target="_blank">
+                        <div class="linkedin" id="hvr-bounce-in">
+                            <img id="logo1" src="img/github-logo.png" alt="Linkedin">
+                        </div>
+                    </a>
+
+                    <a href="pdf/ElifAkinAltinteriCVENG.pdf" download="ElifAkinAltinteriCVENG">
+                        <div class="cv" id="hvr-bounce-in">
+                            <img id="logo1" src="img/cv.png" alt="CV">
+                            
+                        </div>
+                    </a>
+                </div>
+                    </div>
+                </section>
+
+                <section class="wrap ms-0 px-0 py-0 me-0 mt-3" id="skills" style="background-image: url(img/bgtüm.png); height: 100vh; background-size:cover;">
+                    <img class="skill pe-2" src="img/skills.png">
+                </section>
+                
+                <div class="background py-5" style="background-color: #f0b4d5; ">
+  <div class="container" style="margin-top: 0;" id="desktop">
+    <div class="row">
+      <div class="col-lg-6 d-flex justify-content-center" style="letter-spacing: 1px;">
+        <h2 class="header display-3" style="margin-bottom: 3px; padding-bottom: 0; color: rgb(250, 238, 239); margin-left: 8px; z-index: 2; position: relative;">
+          Scripting and Programming Language
+        </h2>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center" style="margin-left: -30px; letter-spacing: 2px;">
+        <h2 class="header display-3" style="color: rgb(249, 244, 234); z-index: 2; position: relative;">
+          Graphic & Web Software
+        </h2>
+      </div>
+    </div>
+    <div class="row" style=" margin-left: 100px;" id="desktopFoto">
+      <div class="col-lg-6 col-md-12">
+        <div class="mobilTitle">
+          <h2 class="header" id="mobil">Scripting and Programming Language</h2>
+        </div>
+        <img src="img/programming/programming-02-01.png" style="height: 80vh;" id="ProgrammingPng1" alt="">
+      </div>
+      <div class="mobilTitle">
+        <h2 class="header" id="mobil2">Graphic & Web Software</h2>
+      </div>
+      <div class="col-lg-6 col-md-12" style="margin-top: 3px;">
+        <img src="img/programming/programming-02-02.png" style="height: 78vh;"id="ProgrammingPng" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                    <section class="ms-0 px-0 py-0 me-0" id="works" style="width: 100%; overflow-x: hidden;">
+        <div class="container mt-5 mb-5">
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <a href="social-mediadesign.html" class="custom-card">
+                        <div class="card" style="background-color:#f8d1e6;">
+                            <img src="img/works-01.png" class="custom-card-body">
+                            <div class="card-body text-center">
+                                <h5>Social Media Design</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <a href="logo-design.html" class="custom-card">
+                        <div class="card" style="background-color:#f8d1e6;">
+                            <img src="img/works-02.png" class="custom-card-body">
+                            <div class="card-body text-center">
+                                <h5>Logo Design</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <a href="banner-design.html" class="custom-card">
+                        <div class="card" style="background-color:#f8d1e6;">
+                            <img src="img/works-01.png" class="custom-card-body">
+                            <div class="card-body text-center">
+                                <h5>Banner Design</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <a href="book-coverdesign.html" class="custom-card">
+                        <div class="card" style="background-color:#f8d1e6;">
+                            <img src="img/works-03.png" class="custom-card-body">
+                            <div class="card-body text-center">
+                                <h5>Bookcover Design</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <a href="posters-design.html" class="custom-card">
+                        <div class="card" style="background-color:#f8d1e6;">
+                            <img src="img/works-04.png" class="custom-card-body">
+                            <div class="card-body text-center">
+                                <h5>Poster Design</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <a href="photomanipulations.html" class="custom-card">
+                        <div class="card" style="background-color:#f8d1e6;">
+                            <img src="img/works-01.png" class="custom-card-body">
+                            <div class="card-body text-center">
+                                <h5>Photo Manipulations</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="seeMore">
+        <img src="img/dribbble.png" style="width: 50px; height: 50px;">
+        <a href="https://dribbble.com/Akin11">See more on Dribbble</a>
+        <br>
+        <br>
+        <br>
+    </div>
+        
+        <footer>
+    <div class="container mt-5">
+                <a href="index.html" target="_blank">
+                        <div class="logoelf d-flex justify-content-center" id="hvr-bounce-in">
+                            <img id="logoelf" src="img/logoelf-02.png" style="width: 100px; height: 100px; margin-left: 26px; alt="Anasayfa">
+                        </div>
+                    </a>
+                    <div class="sentence fs-2 d-flex justify-content-center">
+                        <h1 class="title">Living, learning, & leveling up <br>
+                            one day at a time.</p>
+                    </div>
+                    <section class="" id="contact">
+
+                    <div class="container d-flex justify-content-center" id="contactLogo">
+                        <a href="mailto:elifakin11@gmail.com">
+                          <img class="contact" src="img/contact-03.png" alt="Contact">
+                        </a>
+                      </div>
+                    </section>
+
+                        <div class="container d-flex justify-content-center ">
+                            <p class="elfakin fw-2" style="letter-spacing: 6px; text-decoration-line:none; ">&copy; 2024 Elif Akin</p>
+                            
+                        </div>
+             </div>
+</footer> 
+</div>  
+          
+   </div>
+      </div>
+</div>
+  </div> 
+</div>
+ 
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
